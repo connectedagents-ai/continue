@@ -19,7 +19,7 @@ describe("findLastIndex", () => {
     expect(result).toBe(3);
   });
 
-  it("should return first match from the end when multiple matches exist", () => {
+  it("should return index of last matching element when multiple matches exist", () => {
     const arr = ["a", "b", "a", "c", "a"];
     const result = findLastIndex(arr, (x) => x === "a");
     expect(result).toBe(4);
@@ -78,7 +78,7 @@ describe("findLast", () => {
     expect(result).toBe(2);
   });
 
-  it("should return first match from the end when multiple matches exist", () => {
+  it("should return last matching element when multiple matches exist", () => {
     const arr = ["first", "second", "third", "second"];
     const result = findLast(arr, (x) => x === "second");
     expect(result).toBe("second");
